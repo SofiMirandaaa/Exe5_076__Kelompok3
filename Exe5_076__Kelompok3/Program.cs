@@ -31,13 +31,13 @@ namespace Exe5
             // If queue is empty, then new node is front and rear both
             if (this.Miranda == null)
             {
-                Console.Write(key + " is inserted to queue.");
+                Console.Write(key + " is inserted to queue.\n");
                 Console.WriteLine();
                 this.Sofi = this.Miranda = temp;
                 return;
             }
             // Add the new node at the end of queue and change rear
-            Console.Write(key + " is inserted to queue.");
+            Console.Write(key + " is inserted to queue.\n");
             Console.WriteLine();
             this.Miranda.next = temp;
             this.Miranda = temp;
@@ -48,11 +48,11 @@ namespace Exe5
             // If queue is empty, return NULL.
             if (this.Sofi == null)
             {
-                Console.WriteLine("Queue is empty.");
+                Console.WriteLine("Queue is empty.\n");
                 return;
             }
             // Store previous front and move front one node ahead
-            Console.WriteLine("\nThe element deleted from the queue is.");
+            Console.WriteLine("\nThe element deleted from the queue.\n");
             this.Sofi = this.Sofi.next;
             // If front becomes NULL, then change rear also as NULL
             if (this.Sofi == null)
@@ -62,7 +62,7 @@ namespace Exe5
         {
             if (Sofi == null)
             {
-                Console.WriteLine("Queue is empty.");
+                Console.WriteLine("Queue is empty.\n");
                 return;
             }
             Console.WriteLine("\nElements in the queue are: \n");

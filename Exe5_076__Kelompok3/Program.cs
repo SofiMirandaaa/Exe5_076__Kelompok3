@@ -23,5 +23,25 @@ namespace Exe5
         {
             this.Sofi = this.Miranda = null;
         }
+        // Method to add an key to the queue.
+        public void enqueue(string key)
+        {
+            // Create a new LL node
+            QNode temp = new QNode(key);
+            // If queue is empty, then new node is front and rear both
+            if (this.Miranda == null)
+            {
+                Console.Write(key + " is inserted to queue.");
+                Console.WriteLine();
+                this.Sofi = this.Miranda = temp;
+                return;
+            }
+            // Add the new node at the end of queue and change rear
+            Console.Write(key + " is inserted to queue.");
+            Console.WriteLine();
+            this.Miranda.next = temp;
+            this.Miranda = temp;
+        }
+        
     }
 }

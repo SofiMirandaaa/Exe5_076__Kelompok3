@@ -71,5 +71,8 @@ namespace Exe5
                 Console.WriteLine(display.key);
         }
     }
-   
+    class Program
+    {
+        
+    }
 }

@@ -15,5 +15,10 @@ namespace Exe5
             this.next = null;
         }
     }
+    // A class to represent a queue. The queue, front stores the front node of LL and rear stores the last node of LL
+    class Queue
+    {
+
+    }
 
 }

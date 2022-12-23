@@ -42,6 +42,22 @@ namespace Exe5
             this.Miranda.next = temp;
             this.Miranda = temp;
         }
-        
+        // Method to remove an key from queue.
+        public void dequeue()
+        {
+            // If queue is empty, return NULL.
+            if (this.Sofi == null)
+            {
+                Console.WriteLine("Queue is empty.");
+                return;
+            }
+            // Store previous front and move front one node ahead
+            Console.WriteLine("\nThe element deleted from the queue is.");
+            this.Sofi = this.Sofi.next;
+            // If front becomes NULL, then change rear also as NULL
+            if (this.Sofi == null)
+                this.Miranda = null;
+        }
+       
     }
 }

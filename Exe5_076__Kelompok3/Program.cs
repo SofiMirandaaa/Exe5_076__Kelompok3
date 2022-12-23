@@ -58,6 +58,18 @@ namespace Exe5
             if (this.Sofi == null)
                 this.Miranda = null;
         }
-       
+        public void display()
+        {
+            if (Sofi == null)
+            {
+                Console.WriteLine("Queue is empty.");
+                return;
+            }
+            Console.WriteLine("\nElements in the queue are: \n");
+            QNode display;
+            for (display = Sofi; display != null; display = display.next)
+                Console.WriteLine(display.key);
+        }
     }
+   
 }
